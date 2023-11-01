@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!--codificació-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--per a que sigui adaptable per diversos dispositius-->
+    <meta name="theme-color" content="#09f">
+    <meta name="description" content="Pàgina web d'una estació meteorològica"> <!--per les busquedas de google-->
+    <link rel="icon" type="image/jpg" href="/imatges/icona pàgina web.png">
+    <title>Meteo Martu</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="canonical" href="https://meteo.martu"> <!--www.mateo.martu // meteo.martu-->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="titulo">Meteo Martu</h1>
+        <img class="logo" src="/imatges/logo_meteo_martu.png" alt="logo de l'estació meteorològica">
+        <p>Pàgina web d'una estació meteorològica</p>
+        <h4>Variables que mostrem:</h4>
+        <ul>
+            <li>Temperatura (ºC)</li>
+            <li>Pressió (Pa)</li>
+            <li>Humitat (%)</li>
+            <li>Velocitat del vent (Km/h)</li>
+            <li>Precipitacions (m3)</li>
+        </ul>
+        <h4>Data i hora de les dades:</h4>
+        <input type="datetime-local" name="" id="inputdata1">
+        <p>Aquesta estació meteorològica està situada a Malgrat de Mar (Maresme)</p>
+    </header>
+    <div class="chart-container">
+        <div class="chart-group">
+            <h4>Temperatura:</h4>
+            <canvas class="chart" id="Temperatura"></canvas>
+        </div>
+        <div class="chart-group">
+            <h4>Pressió:</h4>
+            <canvas class="chart" id="Pressió"></canvas>
+        </div>
+    </div>
+    <div class="chart-container">
+        <div class="chart-group">
+            <h4>Humitat:</h4>
+            <canvas class="chart" id="Humitat"></canvas>
+        </div>
+        <div class="chart-group">
+            <h4>Velocitat del vent:</h4>
+            <canvas class="chart" id="Velocitat del vent"></canvas>
+        </div>
+    </div>
+    <div class="chart-container">
+        <div class="chart-group">
+            <h4>Precipitacions:</h4>
+            <canvas class="chart" id="Precipitacions"></canvas>
+        </div>
+    </div>
+</body>
+<script src="./index.js"></script>
+</html>
